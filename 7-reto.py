@@ -11,18 +11,20 @@ while (opcion != 3):
 
         opcion = int(input("Ingrese la opción que desee (1, 2, 3): "))
         if opcion == 1:
-                monto = int(input("Ingrese el monto en soles a convertir: "))
-                print("Tu monto es soles a convertir es: ")
-                print(f'Tu monto es dolares es: {monto/3}')
+                monto = float(input("Ingrese el monto en soles a convertir: "))
+                print("Tu monto en soles a convertir es: ")
+                monto = round(monto/3,2)
+                print(f'Tu monto es dolares es: {monto}')
         elif opcion == 2:
-                monto = int(input("Ingrese el monto en dolares a convertir: "))
+                monto = float(input("Ingrese el monto en dolares a convertir: "))
                 print("Tu monto es dolares a convertir es: ")
-                print(f'Tu monto es soles es: {monto*3}')
+                monto = round(monto*3,2)
+                print(f'Tu monto es soles es: {monto}')
         elif opcion == 3:
                 print("saldrá del convertidor")                
                 break
         else:
-                print("opción no valida...")
+                print("opción no valida.")
                 
             
                 
