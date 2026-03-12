@@ -116,15 +116,13 @@ while(True):
             print("Alumno eliminado exitosamente.")                    
             print(f"DNI : {codigo}")
             print(f"NOMBRE : {del_nombre}")
-            print(f"EMAIL : {del_alumno}")
+            print(f"EMAIL : {del_email}")
             print("*"*ANCHO)
         else:
             print("No existe código")   
             break
   
-                
-        
-        
+                       
     if opcion == 5:
         print("=" * ANCHO)
         print(" " * 10 + "SALIENDO DEL SISTEMA...")

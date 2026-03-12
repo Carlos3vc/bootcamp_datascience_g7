@@ -1,0 +1,38 @@
+def saludar(nombre):
+    print(f"Hola {nombre}")
+
+nombre_usuario = input("como te llamas?")
+saludar(nombre_usuario)
+
+
+def sumar (a,b):
+    return a + b
+
+resultado = sumar(5,4)
+print(f"la suma es {resultado}")
+
+
+def sumar_todos(*args):
+    print(args)
+    resultado = 0
+    for numero in args:
+        resultado += numero
+    return resultado
+
+print(sumar_todos(1,2,3,4,5))
+print(sumar_todos(1,2,6))
+
+def calculadora(**kwargs):
+    print(kwargs)
+    if kwargs["operacion"] == "suma":
+        return kwargs["a"] + kwargs["b"]
+    elif kwargs["operacion"] == "resta":
+        return kwargs["b"] - kwargs["b"]
+    else:
+        return "operacion incorrecta"
+    
+    resultado1 = calculadora(operacion="sums", a=10,b=3)
+    print(f"resultado 1: {resultado1}")
+    resultado2 = calculadora(operacion="resta", a=19,b=2)
+    print(f"resultado 2: {resultado2}")
+    

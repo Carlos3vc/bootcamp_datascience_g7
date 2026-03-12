@@ -22,7 +22,7 @@ while (opcion != 3):
                 print(f'Tu monto es soles es: {monto}')
         elif opcion == 3:
                 print("saldrá del convertidor")                
-                break
+                exit()
         else:
                 print("opción no valida.")
                 
